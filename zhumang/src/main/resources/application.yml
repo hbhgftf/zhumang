@@ -1,0 +1,77 @@
+tencent:
+  cloud:
+    sdkAppId: 1600089018
+    secretKey: "3ed492e6eeeaa0f87871f78b24a18619a1e854631a09cd7b20e9ca886ee80d36"
+minio:
+  endpoint: http://192.168.12.116:9000
+  bucketName: course #存储桶名称
+  accessKey: admin #访问的key
+  secretKey: 12345678
+spring:
+  mail:
+    # 发送者邮箱
+    username: 2280929569@qq.com
+    #申请到的授权码
+    password: gjtfzovgidkveadg
+    # 配置 SMTP 服务器地址
+    host: smtp.qq.com
+    # 端口号465或587
+    port: 465
+    protocol: smtps
+    # 默认的邮件编码为UTF-8
+    default-encoding: UTF-8
+    # 配置SSL 加密工厂
+    properties:
+      mail:
+        smtp:
+          socketFactoryClass: javax.net.ssl.SSLSocketFactory
+          #表示开启 DEBUG 模式，这样，邮件发送过程的日志会在控制台打印出来，方便排查错误
+          debug: true
+          ssl: true
+  redis:
+    host: localhost
+    port: 6379
+    database: 0
+    timeout: 10000
+    lettuce:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/rural_revitalization?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: 123456
+  websocket:
+    # WebSocket 配置
+    endpoint: /ws
+    allowed-origins: "*"
+    # 心跳间隔（毫秒）
+    heartbeat-interval: 30000
+    # 连接超时时间（毫秒）
+    connection-timeout: 60000
+    # 消息大小限制（字节）
+    max-text-message-size: 8192
+    # 最大会话数
+    max-sessions: 1000
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+  global-config:
+    db-config:
+      id-type: ASSIGN_ID
+  mapper-locations: classpath*:/mapper/**/*.xml
+  spring:
+    jackson:
+      date-format: yyyy-MM-dd HH:mm:ss
+      time-zone: GMT+8
+
+jwt:
+  # 使用 Base64 编码的密钥，原始密钥为：zhumang-jwt-secret-key-2024-please-keep-it-safe-and-secure
+  secret: emh1bWFuZy1qd3Qtc2VjcmV0LWtleS0yMDI0LXBsZWFzZS1rZWVwLWl0LXNhZmUtYW5kLXNlY3VyZQ==
+  expire: 3600  # 访问令牌过期时间（秒）
+  refresh-expire: 604800  # 刷新令牌过期时间（秒，7天）
