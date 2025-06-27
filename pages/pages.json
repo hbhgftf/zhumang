@@ -1,0 +1,162 @@
+{
+	"pages": [ 
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path" : "pages/index/core-functionality",
+			"style" : 
+			{
+				"navigationBarTitleText" : "核心功能"
+			}
+		},
+		{
+			"path" : "pages/index/volunteer",
+			"style" : 
+			{
+				"navigationBarTitleText" : "志愿者"
+			}
+		},
+		
+		{
+			"path" : "pages/index/volunteer-register",
+			"style" : 
+			{
+				"navigationBarTitleText" : "成为志愿者"
+			}
+		},
+		{
+			"path" : "pages/index/mine",
+			"style" : 
+			{
+				"navigationBarTitleText" : "个人中心",
+				"navigationStyle": "custom"
+			}
+		},
+		
+		
+		
+		
+		{
+			"path" : "pages/test-auth/test-auth",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path": "pages/policy/policy",
+			"style": {
+				"navigationBarTitleText": "政策查询",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/policy/detail",
+			"style": {
+				"navigationBarTitleText": "政策详情",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/basicInfo/basicInfo",
+			"style": {
+				"navigationBarTitleText": "基本信息"
+			}
+		},
+		{
+			"path": "pages/index/spxz/spxz",
+			"style": {
+				"navigationBarTitleText": "视频协助"
+			}
+		},
+		{
+			"path": "pages/index/travel-appointment/travel-appointment",
+			"style": {
+				"navigationBarTitleText": "出行预约"
+			}
+		},
+		{
+			"path": "pages/admin/index",
+			"style": {
+				"navigationBarTitleText": "管理后台",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/policy/favorites",
+			"style": {
+				"navigationBarTitleText": "我的收藏",
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/index/faq-list",
+			"style": {
+				"navigationBarTitleText": "全部常见问题"
+			}
+		},
+		{
+			"path": "pages/index/about",
+			"style": {
+				"navigationBarTitleText": "关于我们"
+			}
+		},
+		{
+			"path": "pages/index/feedback",
+			"style": {
+				"navigationBarTitleText": "我要反馈"
+			}
+		}
+		
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"list": [
+{
+                "pagePath": "pages/index/index",
+                "iconPath": "static/shouye.png",
+                "selectedIconPath": "static/shouye-sel.png",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/index/course",
+                "iconPath": "static/kecheng .png",
+                "selectedIconPath": "static/kecheng-sel.png",
+                "text": "帮助我"
+            },
+            {
+                "pagePath": "pages/index/elective",
+                "iconPath": "static/xuanze.png",
+                "selectedIconPath": "static/xuanze-sel.png",
+                "text": "志愿者"
+            },
+            {
+                "pagePath": "pages/index/mine",
+                "iconPath": "static/wode.png",
+                "selectedIconPath": "static/wode-sel .png",
+                "text": "我的"
+            }
+		]
+	},
+	"subPackages": [{
+		"root": "pages-ai-desk",
+		"pages": [{
+			"path": "index/index",
+			"style": {
+				"navigationBarTitleText": "智能客服",
+				"navigationStyle": "default"
+			}
+		}]
+	}],
+	"uniIdRouter": {}
+}
