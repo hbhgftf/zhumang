@@ -1,0 +1,30 @@
+{
+	"code": 200,
+	"status": true,
+	"message": "操作成功",
+	"data": {
+		"records": [{
+			"id": 1,
+			"courseCno": "WL2300001",
+			"courseName": "物理23学年",
+			"teacherId": 3,
+			"isValid": 1,
+			"isDeleted": 0,
+			"sort": 1,
+			"createTime": "2023-03-06 01:26:29",
+			"updateTime": "2024-10-24 14:29:13"
+		}, {
+			"id": 2,
+			"courseCno": "WL23",
+			"courseName": "化学23学年",
+			"teacherId": 6,
+			"isValid": 2,
+			"isDeleted": 0,
+			"sort": 1,
+			"createTime": "2023-03-16 01:26:29",
+			"updateTime": "2024-10-24 14:29:13"
+		}, 
+		}]
+		
+	}
+}
